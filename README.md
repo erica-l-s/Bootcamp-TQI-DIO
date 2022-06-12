@@ -2,10 +2,12 @@
 
 Olá, aqui se encontra meus desafios do Bootcamp TQI
 
-**Atividades:** 
+__**Atividades:**__ 
 
 41 cursos :small_red_triangle: 7 desafios de projeto :small_red_triangle: 2 desafios de código :small_red_triangle: 1 live
 
-Conteudo programático
+__**Conteudo programático:**__
+
+
 
 
