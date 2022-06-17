@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(221, 190, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+button{
+    border-radius: 50%;
+    border-color: blueviolet;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+
+.botoes{
+  margin: 20px 80px ;
+  
+}
+
