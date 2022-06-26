@@ -18,6 +18,7 @@ function flipCard() {
     hasFlipperCard = false;
 
     checkForMatch();
+  
 }
 
 function checkForMatch() {
@@ -26,6 +27,8 @@ function checkForMatch() {
         return;
     }
     unflipCards();
+    
+    
 }
 
 function disableCards() {
@@ -43,12 +46,27 @@ function unflipCards() {
         secondCard.classList.remove('flip')
 
         resetBoard();
-    }, 1500)
+    }, 1000)
 }
 
 function resetBoard(){
     [hasFlipperCard,lockBoard] = [false, false];
     [firstCard,secondCard] = [null, null];
+
+    
+}
+
+function resetGame(){
+    cards.forEach((card)=>{
+        card.classList.remove('flip');
+        card.addEventListener('click',flipCard);
+        setTimeout(()=>{
+            let randomPosition = Math.floor(Math.random()*12);
+            card.style.order = randomPosition;
+
+        },600)
+    })
+    resetBoard();
 }
 
 (function shuffle(){
@@ -57,6 +75,8 @@ function resetBoard(){
         card.style.order = randomPosition;
     })
 })();
+
+
 
 cards.forEach((card) => {
     card.addEventListener('click', flipCard)
